@@ -33,3 +33,5 @@ done
 rm -f _tmp.png
 rm -f _tmpb.png
 
+# Handle some special case renaming..
+mv icons/$w/warpray.png icons/$w/voidray.png
