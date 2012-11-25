@@ -1,0 +1,7 @@
+# Ignore generated images
+leagues/plain
+leagues/plain-processed
+leagues/processed
+races/plain
+units/icons
+icons/icons

@@ -14,7 +14,7 @@ for k in dds/*dds; do
 	filename=$(basename "$k")
 	extension="${filename##*.}"
 	filename="${filename%.*}"
-	m=`expr match "$filename" '\(btn-unit-[a-zA-Z]*-\)'`
+	m=`expr match "$filename" '\(btn-[a-zA-Z]*-[a-zA-Z]*-\)'`
 	unit="${filename//$m/}"
 
 	echo "$k -> icons/$w/$unit.png ($w x $h)"
@@ -35,3 +35,5 @@ rm -f _tmpb.png
 
 # Handle some special case renaming..
 mv icons/$w/warpray.png icons/$w/voidray.png
+mv icons/$w/infestedmarine.png icons/$w/infestedterran.png
+
