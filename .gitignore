@@ -1,7 +1,5 @@
 # Ignore generated images
-leagues/plain
-leagues/plain-processed
-leagues/processed
-races/plain
+leagues/output
+races/output
 units/icons
 icons/icons
