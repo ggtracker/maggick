@@ -14,7 +14,7 @@ for k in dds/*dds; do
 	filename=$(basename "$k")
 	extension="${filename##*.}"
 	filename="${filename%.*}"
-	m=`expr match "$filename" '\(btn-[a-zA-Z]*-[a-zA-Z]*-\)'`
+	m=`expr "$filename" : '\(btn-[a-zA-Z]*-[a-zA-Z]*-\)'`
 	unit="${filename//$m/}"
 
 	echo "$k -> icons/$w/$unit.png ($w x $h)"

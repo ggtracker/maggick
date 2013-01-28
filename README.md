@@ -8,8 +8,9 @@
 
 ## Creating unit icons
 
- 1. Extract btn-unit* (and all files from special cases below) from base.MPQ and throw them in units/dds/
- 2. `cd units && bash gen.sh <size>`
+ 1. Extract btn-unit* (and all files from special cases below) from the appropriate MPQ file and throw them in units/dds/
+    The MPQ file will be Starcraft II/Mods/Liberty.SC2Mod/Base.SC2Assets for WoL units.
+ 2. `cd units && bash gen.sh <size>` for <size> in 32, 48, 76
  3. profit.
 
 ### Special cases:
